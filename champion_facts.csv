@@ -1,0 +1,169 @@
+"","champion_id","champion_name","champion_organization","dont.exclude"
+"1",1,"Gloo","Gloo",TRUE
+"2",2,"CeDAR","CeDAR",TRUE
+"3",3,"Compassion International","Compassion International",TRUE
+"4",4,"Business As Unusual","Business As Unusual",TRUE
+"5",5,"Cru","Cru",TRUE
+"6",6,"FamilyLife","FamilyLife",TRUE
+"7",7,"Meier Clinics","Meier Clinics",TRUE
+"8",8,"Oxygen365","Oxygen365",TRUE
+"9",9,"REVEAL For Church: Spiritual Life Survey","REVEAL For Church: Spiritual Life Survey",TRUE
+"10",10,"Thirst Project","Thirst Project",TRUE
+"11",11,"TYRO","TYRO",TRUE
+"12",12,"Test Account","Test Account",FALSE
+"13",13,"REVEAL","REVEAL",TRUE
+"14",14,"Christian Character Formation Project","Christian Character Formation Project",TRUE
+"15",15,"Equip & Inspire","Equip & Inspire",TRUE
+"16",16,"Gloo Product","Gloo Product",FALSE
+"17",17,"Gloo Initiative","Gloo Initiative",FALSE
+"18",18,"Gloo Tech","Gloo Tech",FALSE
+"19",19,"Stronger Families","Stronger Families",TRUE
+"20",20,"Family Bridges","Family Bridges",TRUE
+"21",21,"Guud Intentions","Guud Intentions",TRUE
+"22",22,"Chapel","Chapel",TRUE
+"23",23,"TYRO Alumni Community","TYRO Alumni Community",TRUE
+"24",24,"Date Night","Date Night",TRUE
+"25",25,"Orchestra Media Group","Orchestra Media Group",TRUE
+"26",26,"UMI Connection","UMI Connection",TRUE
+"27",27,"Jimmy Mellado","Jimmy Mellado",TRUE
+"28",28,"Great Commandment Network","Great Commandment Network",TRUE
+"29",29,"Summer Connect","Summer Connect",TRUE
+"30",30,"Boulder Project","Boulder Project",TRUE
+"31",31,"Dr. Henry Cloud","Dr. Henry Cloud",TRUE
+"32",32,"Civic Character Formation Project","Civic Character Formation Project",TRUE
+"33",33,"Gloo Know Team","Gloo Know Team",FALSE
+"34",34,"Cru NYC","Cru NYC",TRUE
+"35",35,"Jesus Film Media","Jesus Film Media",TRUE
+"36",36,"R.I.O.T.","R.I.O.T.",TRUE
+"37",37,"Celebration Church","Celebration Church",TRUE
+"38",38,"Steve Saavedra","Steve Saavedra",TRUE
+"39",39,"Pacific Dental Services","Pacific Dental Services",TRUE
+"40",40,"Emily shirk","Emily shirk",FALSE
+"41",41,"Gloo Sandbox","Gloo Sandbox",FALSE
+"42",42,"Date Night North Texas","Date Night North Texas",TRUE
+"43",43,"REVEAL for Me: Spiritual Life Development","REVEAL for Me: Spiritual Life Development",TRUE
+"44",44,"Compassion Training & Development","Compassion Training & Development",TRUE
+"45",45,"Cru MPD","Cru MPD",TRUE
+"46",46,"Hillsdale College","Hillsdale College",TRUE
+"47",47,"_qa","_qa",FALSE
+"48",48,"Champion Services","Champion Services",TRUE
+"49",49,"Jeff S. Fray","Jeff S. Fray",FALSE
+"50",50,"Scott Beck","Scott Beck",FALSE
+"51",51,"Scott Beck","Scott Beck",TRUE
+"52",52,"Jordan Fray","Jordan Fray",FALSE
+"53",53,"Christian Life Profile","Christian Life Profile",TRUE
+"54",54,"Vinyl-Free Shower Curtains","Vinyl-Free Shower Curtains",FALSE
+"55",55,"Remarkable!","Remarkable!",TRUE
+"56",56,"InteGREAT","InteGREAT",TRUE
+"57",57,"Women at gloo","Women at gloo",TRUE
+"58",58,"Anthem Strong Families","Anthem Strong Families",TRUE
+"59",59,"Justin Vallelonga","Justin Vallelonga",FALSE
+"60",60,"Justin's Champion","Justin's Champion",FALSE
+"61",61,"Cornerstone of Recovery","Cornerstone of Recovery",TRUE
+"62",62,"Recovery Sample","Recovery Sample",TRUE
+"63",63,"Relational Values","Relational Values",TRUE
+"64",64,"Soul Care","Soul Care",TRUE
+"65",65,"Nathan Ykema","Nathan Ykema",FALSE
+"66",66,"Assessments on Gloo","Assessments on Gloo",FALSE
+"67",67,"Focus on Marriage","Focus on Marriage",TRUE
+"68",68,"Devon Kline","Devon Kline",FALSE
+"69",69,"Cru Military","Cru Military",TRUE
+"70",70,"A New Path","A New Path",TRUE
+"71",71,"Jaywalker Lodge","Jaywalker Lodge",TRUE
+"72",72,"Harmony Foundation","Harmony Foundation",TRUE
+"73",73,"LO Group","LO Group",TRUE
+"74",74,"O'Keefe Health and Wellness","O'Keefe Health and Wellness",TRUE
+"75",75,"Step 13","Step 13",TRUE
+"76",76,"FB Archive","FB Archive",TRUE
+"77",77,"yolo champion","yolo champion",FALSE
+"78",78,"Nico's Champion","Nico's Champion",FALSE
+"79",79,"Gloo Serve","Gloo Serve",FALSE
+"80",80,"Grit & Virtue","Grit & Virtue",TRUE
+"81",81,"Smola","Smola",FALSE
+"82",82,"FollowApp","FollowApp",TRUE
+"83",83,"The Cru Sandbox","The Cru Sandbox",TRUE
+"84",84,"Cru Sandbox","Cru Sandbox",TRUE
+"85",85,"Writers Inc.","Writers Inc.",FALSE
+"86",86,"Jeremy Horn","Jeremy Horn",TRUE
+"87",87,"The Justice Team","The Justice Team",TRUE
+"88",88,"Stadia","Stadia",TRUE
+"89",89,"Andrew Neumann","Andrew Neumann",TRUE
+"90",90,"KEEN","KEEN",TRUE
+"91",91,"Civic Character Educators","Civic Character Educators",TRUE
+"92",92,"Christian Character Educators","Christian Character Educators",TRUE
+"93",93,"San Diego Summer Mission","San Diego Summer Mission",TRUE
+"94",94,"Cru San Antonio","Cru San Antonio",TRUE
+"95",95,"Cru Reset","Cru Reset",TRUE
+"96",96,"The Wild Sons","The Wild Sons",FALSE
+"97",97,"Live Oak Bank","Live Oak Bank",TRUE
+"98",98,"TYRO Rites of Passage","TYRO Rites of Passage",TRUE
+"99",99,"The Field Meditation","The Field Meditation",TRUE
+"100",100,"Making Your Life Count","Making Your Life Count",TRUE
+"101",101,"ASU-CGI Champion","ASU-CGI Champion",TRUE
+"102",102,"Governance (Family and Orgs)","Governance (Family and Orgs)",TRUE
+"103",103,"Relationship Revolution","Relationship Revolution",TRUE
+"104",104,"Orange Leaf","Orange Leaf",TRUE
+"105",105,"Lazos de Familia","Lazos de Familia",TRUE
+"106",106,"Training & Support","Training & Support",TRUE
+"107",107,"PDS Institute","PDS Institute",TRUE
+"108",108,"FamilyLife Sandbox","FamilyLife Sandbox",TRUE
+"109",109,"Urban Faith","Urban Faith",TRUE
+"110",110,"TVC Children’s Ministry","TVC Children’s Ministry",TRUE
+"111",111,"Emerging Women","Emerging Women",TRUE
+"112",112,"Dr. Scott Cairns","Dr. Scott Cairns",TRUE
+"113",113,"Gloo Growth Partner Initiative","Gloo Growth Partner Initiative",FALSE
+"114",114,"Champions Tribe","Champions Tribe",TRUE
+"115",115,"Dillon Wilson Test","Dillon Wilson Test",TRUE
+"116",116,"Dillon Wilson Test 2","Dillon Wilson Test 2",TRUE
+"117",117,"ARP Resource","ARP Resource",TRUE
+"118",118,"Broken Vessel","Broken Vessel",TRUE
+"119",119,"Brothers of Israel","Brothers of Israel",TRUE
+"120",120,"Villanova University Engineering Unleashed","Villanova University Engineering Unleashed",TRUE
+"121",121,"University of Dayton Engineering Unleashed","University of Dayton Engineering Unleashed",TRUE
+"122",122,"Lawrence Technological University Engineering Unleashed","Lawrence Technological University Engineering Unleashed",TRUE
+"123",123,"Thermo-Fluids Engineering Unleashed","Thermo-Fluids Engineering Unleashed",TRUE
+"124",124,"Quantified Self Engineering Unleashed","Quantified Self Engineering Unleashed",TRUE
+"125",125,"UAV Engineering Unleashed","UAV Engineering Unleashed",TRUE
+"126",126,"First Year Engineering Unleashed","First Year Engineering Unleashed",TRUE
+"127",127,"Engineering Unleashed","Engineering Unleashed",TRUE
+"128",128,"FamilyLife Today","FamilyLife Today",TRUE
+"129",129,"Michael Jr.","Michael Jr.",TRUE
+"130",130,"Bob Lepine","Bob Lepine",TRUE
+"131",131,"FamilyLife Blended and Blessed","FamilyLife Blended and Blessed",TRUE
+"132",132,"Dennis Rainey","Dennis Rainey",TRUE
+"133",133,"FamilyLife Stepping Up","FamilyLife Stepping Up",TRUE
+"134",134,"FamilyLife Weekend to Remember","FamilyLife Weekend to Remember",TRUE
+"135",135,"FamilyLife Art of Marriage","FamilyLife Art of Marriage",TRUE
+"136",136,"Cru LAC","Cru LAC",TRUE
+"137",137,"REVEAL For Leader","REVEAL For Leader",TRUE
+"138",138,"Gary Chapman","Gary Chapman",TRUE
+"139",139,"Carlos Cuauhtémoc Sánchez","Carlos Cuauhtémoc Sánchez",TRUE
+"140",140,"Tim Elmore","Tim Elmore",TRUE
+"141",141,"Christena Cleveland","Christena Cleveland",TRUE
+"142",142,"Tiphani Montgomery","Tiphani Montgomery",TRUE
+"143",143,"Marianne Williamson","Marianne Williamson",TRUE
+"144",144,"Elizabeth Gilbert","Elizabeth Gilbert",TRUE
+"145",145,"Brené Brown","Brené Brown",TRUE
+"146",146,"Ryan Holdeman","Ryan Holdeman",TRUE
+"147",147,"Analytics","Analytics",TRUE
+"148",148,"James Clear","James Clear",TRUE
+"149",149,"Tim Ferriss","Tim Ferriss",TRUE
+"150",150,"Seth Godin","Seth Godin",TRUE
+"151",151,"Grit & Virtue","Grit & Virtue",TRUE
+"152",152,"April Diaz","April Diaz",TRUE
+"153",153,"Mark Buchanan","Mark Buchanan",TRUE
+"154",154,"Harvey Carey","Harvey Carey",TRUE
+"155",155,"Ron Deal","Ron Deal",TRUE
+"156",156,"Stephen Mattson","Stephen Mattson",TRUE
+"157",157,"Brandon Schafer","Brandon Schafer",TRUE
+"158",158,"Dr. Scott Stanley","Dr. Scott Stanley",TRUE
+"159",159,"John Gottman","John Gottman",TRUE
+"160",160,"Brad Wilcox","Brad Wilcox",TRUE
+"161",161,"SIYLI - Search Inside Yourself Leadership Institute","SIYLI - Search Inside Yourself Leadership Institute",TRUE
+"162",162,"Jeff Kemp","Jeff Kemp",TRUE
+"163",163,"Bill Farrel","Bill Farrel",TRUE
+"164",164,"Dr. Emerson Eggerichs","Dr. Emerson Eggerichs",TRUE
+"165",165,"Dr. Gary Chapman","Dr. Gary Chapman",TRUE
+"166",166,"Michael Hyatt","Michael Hyatt",TRUE
+"167",0,"Ambiguous","Ambiguous",TRUE
+"168",-1,"Ambiguous Internal","Ambiguous",TRUE
