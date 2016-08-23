@@ -15,3 +15,8 @@ project_data_list %>%
     FUN = rename_and_assign
   )
 
+rm(project_data_list)
+
+calculate_WAU(stardate = 20160812, enddate = 20160818, filter_internals = T)
+
+
