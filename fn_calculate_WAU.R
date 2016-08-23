@@ -31,7 +31,7 @@ calculate_WAU <-
       filter(platformaction_date <= enddate, platformaction_date >= startdate) %>%
       inner_join(existing_user.dimensions, by = "user_id")
     
-    user_platformaction_daterange.facts %>%
+    active_user.count <- user_platformaction_daterange.facts %>%
       group_by(champion_group) %>%
       summarise(count_distinct_active_users = length(unique(user_id))) %>%
       {
@@ -40,6 +40,10 @@ calculate_WAU <-
         )
       }
     
-    inner_join
+    inner_join(
+      existing_user.count,
+      active_user.count
+      ) %>%
+      mutate(percent_active_users = count_distinct_active_users/count_distinct_existing_users)
       
   }
