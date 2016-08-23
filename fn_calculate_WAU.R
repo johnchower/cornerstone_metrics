@@ -20,7 +20,12 @@ calculate_WAU <-
     
     existing_user.count <- existing_user.dimensions %>% 
       group_by(champion_group) %>%
-      summarise(count_distinct_existing_users = length(unique(user_id)))
+      summarise(count_distinct_existing_users = length(unique(user_id))) %>%
+      {
+        rbind(.,
+              c("all", sum(.$count_distinct_existing_users))
+        )
+      }
     
     user_platformaction_daterange.facts <- up.f %>%
       filter(platformaction_date <= enddate, platformaction_date >= startdate) %>%
@@ -28,7 +33,12 @@ calculate_WAU <-
     
     user_platformaction_daterange.facts %>%
       group_by(champion_group) %>%
-      summarise(count_distinct_active_users = length(unique(user_id)))
+      summarise(count_distinct_active_users = length(unique(user_id))) %>%
+      {
+        rbind(.,
+              c("all", sum(.$count_distinct_active_users))
+        )
+      }
     
     inner_join
       
