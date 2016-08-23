@@ -1,10 +1,17 @@
 # Function: calculate_WAU
 
-calculate_WAU <- 
+# Given a date range, calculates:
+#	How many accounts existed by the end (including last day)
+# 	How many accounts were active during the date range (inclusive of endpoints) 
+#	What percentage of existing accounts were active during the date range (also inclusive)
+
+# Also has an option to filter out internal users (filter_internals = T)
+
+calculate_WAU <-
   function(
     stardate,
     enddate,
-    filter_internals = T, 
+    filter_internals = F, 
     u.d = user.dimensions,
     up.f = user_platformaction.facts,
     c.f = champion.facts
