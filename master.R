@@ -17,6 +17,7 @@ project_data_list %>%
 
 rm(project_data_list)
 
+source('one_off_create_champion_facts.r')
 champion.facts <- read.csv("champion_facts_final.csv", stringsAsFactors = F)
 
 calculate_WAU(stardate = 20160812, enddate = 20160818, filter_internals = T)
