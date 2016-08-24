@@ -2,6 +2,7 @@
 # Run this to produce the report results
 
 library(dplyr)
+library(magrittr)
 library(rprojroot)
 
 source('fn_calculate_WAU.r')
@@ -18,8 +19,9 @@ project_data_list %>%
 rm(project_data_list)
 
 source('one_off_create_champion_facts.r')
-champion.facts <- read.csv("champion_facts_final.csv", stringsAsFactors = F)
+champion.facts <- read.csv("champion_facts_final.csv", stringsAsFactors = F) %>%
+  rename(champion_group = Label)
 
-calculate_WAU(stardate = 20160812, enddate = 20160818, filter_internals = T)
+
 
 

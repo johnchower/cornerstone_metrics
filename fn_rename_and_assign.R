@@ -17,6 +17,11 @@ rename_and_assign <- function(df){
       ) %>%
       assign("user.dimensions", ., envir = globalenv())
   } else if(ncol(df) == 2){
-    assign("user_platformaction.facts", df, envir = globalenv())
+    df %>% 
+      rename(
+        user_id = id,
+        platformaction_date = date_id
+      ) %>%
+      {assign("user_platformaction.facts", ., envir = globalenv())}
   }
 }

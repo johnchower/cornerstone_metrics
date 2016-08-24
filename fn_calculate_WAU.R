@@ -1,15 +1,17 @@
 # Function: calculate_WAU
 
-# Given a date range, calculates:
-#	How many accounts existed by the end (including last day)
-# 	How many accounts were active during the date range (inclusive of endpoints) 
+# Given a date range (startdate, enddate), calculates, for each champion_group,
+#	How many accounts existed on the enddate
+# How many accounts were active between the startdate and the enddate (inclusive of endpoints) 
 #	What percentage of existing accounts were active during the date range (also inclusive)
+
+# Returns results as a data frame.
 
 # Also has an option to filter out internal users (filter_internals = T)
 
 calculate_WAU <-
   function(
-    stardate,
+    startdate,
     enddate,
     filter_internals = F, 
     u.d = user.dimensions,
@@ -22,7 +24,7 @@ calculate_WAU <-
       {
         if(filter_internals){
           filter(., account_type != "Internal User")
-        }
+        } else {.}
       }
     
     existing_user.count <- existing_user.dimensions %>% 
@@ -30,9 +32,25 @@ calculate_WAU <-
       summarise(count_distinct_existing_users = length(unique(user_id))) %>%
       {
         rbind(.,
-              c("all", sum(.$count_distinct_existing_users))
+              data.frame(champion_group = "all", count_distinct_existing_users = sum(.$count_distinct_existing_users))
         )
       }
+    
+    existing_user.count %<>%
+      {
+        left_join(
+          unique(select(champion.facts, champion_group)),
+          .
+        )
+      } %>% 
+      mutate(
+        count_distinct_existing_users = 
+          ifelse(
+            is.na(count_distinct_existing_users), 
+            0, 
+            count_distinct_existing_users
+          )
+      )
     
     user_platformaction_daterange.facts <- up.f %>%
       filter(platformaction_date <= enddate, platformaction_date >= startdate) %>%
@@ -42,15 +60,30 @@ calculate_WAU <-
       group_by(champion_group) %>%
       summarise(count_distinct_active_users = length(unique(user_id))) %>%
       {
-        rbind(.,
-              c("all", sum(.$count_distinct_active_users))
+        rbind(
+          .,   
+          data.frame(
+            champion_group = "all", 
+            count_distinct_active_users = sum(.$count_distinct_active_users)
+          )
         )
       }
     
-    inner_join(
+    left_join(
       existing_user.count,
       active_user.count
-      ) %>%
-      mutate(percent_active_users = count_distinct_active_users/count_distinct_existing_users)
+      ) %>% 
+      mutate(
+        count_distinct_active_users = 
+          ifelse(
+            is.na(count_distinct_active_users), 
+            0, 
+            count_distinct_active_users
+          )
+      ) %>% 
+      mutate(
+        percent_active_users = 
+          count_distinct_active_users/count_distinct_existing_users
+      )
       
   }
