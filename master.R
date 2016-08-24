@@ -54,6 +54,7 @@ output <- week_definitions %>%
   melt(
     id.vars = c("id", "champion_group")
   ) %>% 
+  mutate(value = round(value, 3)) %>%
   dcast(
     champion_group ~ id + variable, value.var = "value"
   ) %>%
