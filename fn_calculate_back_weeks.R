@@ -19,7 +19,7 @@ calculate_back_weeks <-
       as.numeric
     
     data.frame(
-      week = weeks_to_calc,
+      week = paste0("week_", weeks_to_calc),
       start_date = startdates,
       end_date = enddates
     )
