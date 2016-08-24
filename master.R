@@ -24,6 +24,7 @@ save_name <-
     , paste(weeks_to_measure, collapse = "")
     , sep = "_"
   )
+view_results <- T
 
 project_data_list <- load_data()
 
@@ -65,11 +66,15 @@ output <- week_definitions %>%
 output %>%
   write.csv(file = paste0(save_location, "/", save_name, ".csv"), row.names = F)
 
-paste0(
-  "open ",
-  save_location, 
-  "/",
-  save_name,
-  ".csv"
-) %>% system
+if(view_results){
+  paste0(
+    "open ",
+    save_location, 
+    "/",
+    save_name,
+    ".csv"
+  ) %>% 
+  system  
+}
+
 
