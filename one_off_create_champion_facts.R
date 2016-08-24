@@ -29,7 +29,7 @@ champion_facts <- read.csv("champion_facts.csv", stringsAsFactors = F) %>%
     Label =
       ifelse(is.na(Label), "Other", Label)
   ) %>%
-  select(-X) %>% 
+  select(-X, -champion_organization, -dont.exclude) %>% 
   write.csv(file = "champion_facts_final.csv", row.names = F)
 
 
