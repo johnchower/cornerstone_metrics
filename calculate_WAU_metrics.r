@@ -46,7 +46,7 @@ project_data_list %>%
 
 rm(project_data_list)
 
-source('one_off_create_champion_facts.r')
+source('create_champion_facts_table.r')
 champion.facts <- read.csv("champion_facts_final.csv", stringsAsFactors = F) %>%
   rename(champion_group = Label)
 
