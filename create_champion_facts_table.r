@@ -1,6 +1,6 @@
 # one-off: create_champion_facts_dataset
 
-label_includes_0 <- read.csv("label_includes.csv", stringsAsFactors = F)
+label_includes_0 <- read.csv("champion_groups.csv", stringsAsFactors = F)
 
 label_includes <- label_includes_0 %>%
   group_by(Label) %>%
