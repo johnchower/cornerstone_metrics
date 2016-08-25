@@ -17,7 +17,7 @@ run_date <- as.Date("2016-08-19")
 
 weeks_to_measure <- c(1,2,4) 
 
-remove_internal_users <- F
+remove_internal_users <- T
 
 input_data_location <- paste(find_root("README.md"), "looker_csvs", sep = "/")
 
