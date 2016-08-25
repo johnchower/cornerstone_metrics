@@ -15,13 +15,13 @@ source('fn_calculate_back_weeks.r')
 
 run_date <- as.Date("2016-08-19")
 
-weeks_to_measure <- c(1,2,4)
+weeks_to_measure <- c(1,2,4) 
 
 remove_internal_users <- F
 
-save_location <- "~/Desktop"
-
 input_data_location <- paste(find_root("README.md"), "looker_csvs", sep = "/")
+
+save_location <- "~/Desktop"
 
 save_name <- 
   paste(
@@ -32,6 +32,7 @@ save_name <-
     , paste(weeks_to_measure, collapse = "")
     , sep = "_"
   )
+
 view_results <- T # If T, then the output csv will open automatically upon completion.
 
 # Calculation ####
