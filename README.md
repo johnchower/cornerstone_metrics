@@ -2,11 +2,16 @@
 Contains R calculations for weekly active user counts and percentages. 
 ## How to use:
 
-Open the script calculate\_WAU\_metrics.r in an R session.
+1. Navigate to the following links, download the data, and place them in the subdirectory .../cornerstone\_metrics/looker\_csvs
 
-Set script parameters as needed.
+  * [https://looker.gloo.us/x/G6PBZMs]
+  * [https://looker.gloo.us/sql/k6vmzthtyydyx4]
 
-Run it.
+2. Open the script calculate\_WAU\_metrics.r in an R session.
+
+3. Set script parameters as needed, and save.
+
+4. Run calculate\_WAU\_metrics.r
 
 ## Method:
 
