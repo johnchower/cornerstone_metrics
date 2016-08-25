@@ -16,7 +16,7 @@ Run it.
 ## Method:
 
 For each week *W* specified in the parameter weeks\_to\_measure, and each champion group *G* (as defined in champion\_groups.csv)
-calculate\_WAU\_metrics.r calculates the following:
+calculate\_WAU\_metrics.r performs the following calculations:
 
 1. count\_distinct\_existing\_users = The number of users from *G* whose account existed by the end of *W*
 2. count\_distinct\_active\_users = The number of users from *G* who were active during week *W*
@@ -25,5 +25,5 @@ calculate\_WAU\_metrics.r calculates the following:
 This calculation is also performed on the set of all users. If the parameter remove\_internal\_users is set to T, then internal users are excluded
 from all steps in the calculation.
 
-Once all calculations are finished, a csv containing all results is saved to a location of the users choosing. 
-(This option is specified by the save\_location parameter.)
+Once all calculations are finished, a csv containing all results is saved to a location 
+that the user specifies with the save\_location parameter.
