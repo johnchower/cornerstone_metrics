@@ -18,6 +18,12 @@ calculate_WAU <-
     up.f = user_platformaction.facts,
     c.f = champion.facts
   ){
+    champlist_plus_all <- champion.facts %>%
+      select(champion_group) %>%
+      unique %>%
+      rbind(data.frame(champion_group = "all"))
+      
+      
     existing_user.dimensions <- u.d %>%
       left_join(c.f, by = "champion_id") %>%
       filter(account_created_date <= enddate) %>%
@@ -39,7 +45,7 @@ calculate_WAU <-
     existing_user.count %<>%
       {
         left_join(
-          unique(select(champion.facts, champion_group)),
+          champlist_plus_all,
           .
         )
       } %>% 
