@@ -10,6 +10,7 @@ source('fn_calculate_WAU.r')
 source('fn_load_data.r')
 source('fn_rename_and_assign.r')
 source('fn_calculate_back_weeks.r')
+source('fn_get_short_version')
 
 # Parameters ####
 
@@ -17,6 +18,18 @@ run_date <- as.Date("2016-08-19")
 
 weeks_to_measure <- c(1,2,4,6) 
 week_definitions <- calculate_back_weeks(rundate = run_date, weeks_to_calc = weeks_to_measure) 
+
+
+metrics_to_track <- 
+  c(
+    "count_distinct_core_users"
+    ,
+    "count_distinct_active_users"
+    ,
+    "percent_active_users"
+    ,
+    "count_distinct_existing_users"
+  )
 
 remove_internal_users <- F
 
@@ -26,7 +39,8 @@ save_location <- "/Users/johnhower/Google Drive/Analytics_graphs/Cornerstone_Met
 
 save_name <- 
   paste(
-    "WAU_metrics"
+    "cornerstone_metrics"
+    , get_short_version(metrics_to_track)
     , ifelse(remove_internal_users, "without_internal", "with_internal")
     , run_date
     , "weeks"
@@ -64,7 +78,7 @@ output <- week_definitions %>%
   melt(
     id.vars = c("id", "champion_group")
   ) %>% 
-  filter(variable == "count_distinct_core_users") %>%
+  filter(variable %in% metrics_to_track) %>%
   mutate(value = round(value, 3)) %>%
   dcast(
     champion_group ~ id + variable, value.var = "value"
