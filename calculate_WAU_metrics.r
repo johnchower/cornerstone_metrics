@@ -15,13 +15,14 @@ source('fn_calculate_back_weeks.r')
 
 run_date <- as.Date("2016-08-19")
 
-weeks_to_measure <- c(1,2,4) 
+weeks_to_measure <- c(1,2,4,6) 
+week_definitions <- calculate_back_weeks(rundate = run_date, weeks_to_calc = weeks_to_measure) 
 
-remove_internal_users <- T
+remove_internal_users <- F
 
 input_data_location <- paste(find_root("README.md"), "looker_csvs", sep = "/")
 
-save_location <- "~/Desktop"
+save_location <- "/Users/johnhower/Google Drive/Analytics_graphs/Cornerstone_Metrics"
 
 save_name <- 
   paste(
@@ -50,8 +51,6 @@ source('create_champion_facts_table.r')
 champion.facts <- read.csv("champion_facts_final.csv", stringsAsFactors = F) %>%
   rename(champion_group = Label)
 
-week_definitions <- calculate_back_weeks(rundate = run_date, weeks_to_calc = weeks_to_measure) 
-
 output <- week_definitions %>%
   group_by(week, start_date, end_date) %>%
   do(
@@ -65,6 +64,7 @@ output <- week_definitions %>%
   melt(
     id.vars = c("id", "champion_group")
   ) %>% 
+  filter(variable == "count_distinct_core_users") %>%
   mutate(value = round(value, 3)) %>%
   dcast(
     champion_group ~ id + variable, value.var = "value"
@@ -81,7 +81,7 @@ output %>%
 if(view_results){
   paste0(
     "open ",
-    save_location, 
+    gsub(" ", "\\\\ ", save_location), 
     "/",
     save_name,
     ".csv"
