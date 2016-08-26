@@ -30,10 +30,11 @@ calculate_WAU <-
       {
         if(filter_internals){
           filter(., account_type != "Internal User")
-        } else { .
-          # The following line moves all internal users to the "Internal Champion" champion_group.
-          
-          # mutate(., champion_group=ifelse(account_type=="Internal User", "Internal Champion", champion_group))
+        } else { 
+          # Don't move internals
+          # .
+          # Move internals
+          mutate(., champion_group=ifelse(account_type=="Internal User", "Internal Champion", champion_group))
         }
       }
     
