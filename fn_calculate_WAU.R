@@ -18,7 +18,7 @@ calculate_WAU <-
     up.f = user_platformaction.facts,
     c.f = champion.facts
   ){
-    champlist_plus_all <- champion.facts %>%
+    champgrouplist_plus_all <- champion.facts %>%
       select(champion_group) %>%
       unique %>%
       rbind(data.frame(champion_group = "all"))
@@ -30,7 +30,11 @@ calculate_WAU <-
       {
         if(filter_internals){
           filter(., account_type != "Internal User")
-        } else {.}
+        } else { .
+          # The following line moves all internal users to the "Internal Champion" champion_group.
+          
+          # mutate(., champion_group=ifelse(account_type=="Internal User", "Internal Champion", champion_group))
+        }
       }
     
     existing_user.count <- existing_user.dimensions %>% 
@@ -45,7 +49,7 @@ calculate_WAU <-
     existing_user.count %<>%
       {
         left_join(
-          champlist_plus_all,
+          champgrouplist_plus_all,
           .
         )
       } %>% 
