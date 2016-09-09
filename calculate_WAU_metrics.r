@@ -14,7 +14,7 @@ source('fn_get_short_version.r')
 
 # Parameters ####
 
-run_date <- as.Date("2016-08-19")
+run_date <- as.Date("2016-09-09")
 
 weeks_to_measure <- c(1,2,4,6) 
 week_definitions <- calculate_back_weeks(rundate = run_date, weeks_to_calc = weeks_to_measure) 

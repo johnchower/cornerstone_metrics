@@ -11,8 +11,8 @@
 
 calculate_WAU <-
   function(
-    startdate = 20160825,
-    enddate = 20160819,
+    startdate = week_definitions$start_date[1],
+    enddate = week_definitions$end_date[1],
     filter_internals = F, 
     u.d = user.dimensions,
     up.f = user_platformaction.facts,
