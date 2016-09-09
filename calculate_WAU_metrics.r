@@ -34,7 +34,7 @@ remove_internal_users <- F
 
 input_data_location <- paste(find_root("README.md"), "looker_csvs", sep = "/")
 
-save_location <- "/Users/johnhower/Google Drive/Analytics_graphs/Cornerstone_Metrics/2016_08_26"
+save_location <- "/Users/johnhower/Google Drive/Analytics_graphs/Cornerstone_Metrics/2016_09_09"
 
 save_name <- 
   paste(
@@ -90,8 +90,10 @@ output <- week_definitions %>%
     champion_group
   )
 
-output %>%
-  write.csv(file = paste0(save_location, "/", save_name, ".csv"), row.names = F)
+write.csv(output,
+          file = paste0(save_location,
+                          "/", save_name, ".csv"),
+          row.names = F)
 
 if(view_results){
   paste0(

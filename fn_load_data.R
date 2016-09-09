@@ -8,5 +8,5 @@ load_data <- function(
   data.loc %>%
     paste(., dir(.), sep = "/") %>%
     as.list %>%
-    lapply(FUN = read.csv)
+    lapply(FUN =function(path)read.csv(path, stringsAsFactors=F))
 }
